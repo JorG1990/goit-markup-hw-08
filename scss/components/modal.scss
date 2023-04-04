@@ -1,0 +1,61 @@
+.backdrop {
+  position: fixed;
+  background: rgba(47, 48, 58, 0.4);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $--modal-transition;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.modal {
+  display: flex;
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: $--white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  align-content: center;
+  justify-content: center;
+}
+
+.exit_modal {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: $--blue-color;
+    border: 1px solid $--blue-color;
+    transition: $--portrait-transition;
+
+    .modal-exit {
+      fill: #2196F3;
+    }
+  }
+}
+
+.modal-exit {
+  pointer-events: none;
+  fill: #000000;
+}

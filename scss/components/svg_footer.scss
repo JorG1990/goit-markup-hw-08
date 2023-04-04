@@ -1,0 +1,39 @@
+.container_footer {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-content: center;
+}
+
+.h3-box {
+  color: $--white-color;
+  letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.container-link {
+  margin-left: 65px;
+}
+
+
+.redes-footer {
+  fill: $--white-color;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover, &:focus {
+    background-color: $--blue-color;
+    fill: $--white-color;
+    transition: $--portrait-transition;
+  }
+}

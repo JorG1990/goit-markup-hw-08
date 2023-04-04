@@ -1,0 +1,43 @@
+h2 {
+  color: $--black-color;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 94px;
+  margin-bottom: 55px;
+}
+
+.customers__svgs {
+  fill: $--gray-color;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: $--gray-color;
+  border-radius: 4px;
+  width: 170px;
+  height: 81px;
+  box-sizing: border-box;
+  border: 1px solid $--gray-color;
+
+  &:hover, &:focus {
+    fill: $--blue-color;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: $--blue-color;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    box-sizing: border-box;
+    border: 1px solid $--blue-color;
+  }
+}
+
+.customers > .customers__svgs:not(:last-child) {
+  margin-right: 30px;
+}
